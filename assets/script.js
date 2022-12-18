@@ -1,6 +1,9 @@
 // Weather API
 // Geociding API
 
+// Assigning API key to variable
+const apiKey = "26b7283df774d23ad23929f9b2ab0395";
+
 // reach into the html and grab the button you want to listen to
 var enterBtn = document.querySelector("#btn");
 console.dir(enterBtn);
