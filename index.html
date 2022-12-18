@@ -22,25 +22,16 @@
     <button id="btn">Enter</button>
 
     <!--MAIN DAY HEADER -->
-    <div
-      id="main-day"
-      class="card border-primary mb-3 d-flex justify-content-center"
-      style="max-width: 75%">
-      <div class="card-header">Header</div>
+    <div id="main-day"class="card border-primary mb-3 d-flex justify-content-center" style="max-width: 75%">
+      <div class="card-header d-flex justify-content-center"><h4>Today's Weather</h4></div>
       <div class="card-body text-primary">
-        <h5 class="card-title">Primary card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+        <p id="tempurature"></p>
+        <p id="wind"></p>
+        <p id="humidity"></p>
       </div>
     </div>
 
     <!--5 DAY COLUMNS-->
-    <div class="row d-none" id="fiveday-header">
-      <div class="col-12">
-          <h3>5-Day Forecast</h3>
-      </div>
   </div>
   <div class="row">
       <div class="col-md-2 forecast bg-secondary text-white m-2 rounded"></div>
