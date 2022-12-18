@@ -4,8 +4,11 @@
 
 #main-header {
   margin-top: 50px;
+  margin-bottom: 15px;
 }
 
-#dayAgenda {
-  margin-top: 80px;
+#main-day {
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
 }
