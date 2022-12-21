@@ -12,6 +12,10 @@ function handleCitySearch(event) {
   // call a new fx for fetching. pass it the city
   fetchCurrentWeather(city);
   cityNameIn.value = "";
+
+  localStorage.setItem("searchedCity", JSON.stringify(city));
+  
+  console.log(city);
 }
 
 enterBtn.addEventListener("click", handleCitySearch);
@@ -80,4 +84,3 @@ function display5Day(fiveDayData) {
     document.querySelector("#forecast").append(card);
   }
 }
-
