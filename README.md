@@ -16,4 +16,4 @@
 <img width="991" alt="Screenshot 2022-12-20 at 8 13 35 PM" src="https://user-images.githubusercontent.com/112665153/208819811-0e136d89-ca33-40dd-b933-776e3e0dc480.png">
 
 ### Technologies Used
-##### Bootstrap [link](https://bootstrap.themes.guide) "Bootstrap"
+##### [Bootstrap](https://bootstrap.themes.guide)
