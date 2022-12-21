@@ -23,18 +23,19 @@
     <button id="btn">Enter</button>
 
     <!--CURRENT DAY HEADER -->
-    <div id="currentWeather"class="card border-primary mb-3 d-flex justify-content-center" style="max-width: 75%">
+    <div class="container">
+    <div id="currentWeather" class="card border-primary d-flex justify-content-center mx-auto" style="max-width: 75%">
       <div class="card-header d-flex justify-content-center"><h4>Today's Weather</h4></div>
       <div class="card-body text-primary">
         <p id="tempurature"></p>
         <p id="wind"></p>
         <p id="humidity"></p>
       </div>
-    </div>
+    </div></div>
 
     <!--5 DAY COLUMNS-->
   </div>
-  <div class="row">
+  <div id="forecast" class="row">
       <div class="col-md-2 forecast bg-secondary text-white m-2 rounded"></div>
       <div class="col-md-2 forecast bg-secondary text-white m-2 rounded"></div>
       <div class="col-md-2 forecast bg-secondary text-white m-2 rounded"></div>
@@ -59,6 +60,19 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+      crossorigin="anonymous"
+    ></script>
+  
     <script src="./assets/script.js"></script>
   </body>
 </html>
