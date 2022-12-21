@@ -48,9 +48,12 @@ function displayCurrentWeather(data) {
   let icon = document.createElement("img");
   icon.setAttribute("src", iconUrl);
   document.querySelector(".card-header").append(icon);
-  document.querySelector("#tempurature").textContent = data.main.temp;
-  document.querySelector("#wind").textContent = data.wind.speed;
-  document.querySelector("#humidity").textContent = data.main.humidity;
+  document.querySelector("#tempurature").textContent =
+    "Tempurature: " + data.main.temp;
+  document.querySelector("#wind").textContent =
+    "Wind Speed: " + data.wind.speed;
+  document.querySelector("#humidity").textContent =
+    "Humidity: " + data.main.humidity;
 }
 
 function fetch5Day(lat, lon) {
@@ -69,13 +72,7 @@ function fetch5Day(lat, lon) {
 function display5Day(fiveDayData) {
   for (let i = 3; i < fiveDayData.list.length; i += 8) {
     let card = document.createElement("div");
-    card.classList.add(
-      "col-md-2",
-      "forecast",
-      "text-white",
-      "m-2",
-      "rounded"
-    );
+    card.classList.add("col-md-2", "forecast", "text-white", "m-2", "rounded");
 
     let dateEl = document.createElement("p");
     dateEl.textContent = dayjs
@@ -83,7 +80,7 @@ function display5Day(fiveDayData) {
       .format("MM/DD/YYYY");
 
     let tempEL = document.createElement("p");
-    tempEL.textContent = fiveDayData.list[i].main.temp;
+    tempEL.textContent = "Tempurature: " + fiveDayData.list[i].main.temp;
 
     let humidity = document.createElement("p");
     humidity.textContent = fiveDayData.list[i].main.humidity;

@@ -3,12 +3,10 @@
   --green: #092327;
   --lightGreen: #0b5351;
   --white: #efecca;
-  --yellow: #f7ff58;
 }
 * {
   text-align: center;
 }
-
 
 #main-header {
   margin-top: 50px;
@@ -19,7 +17,6 @@
   margin-top: 50px;
   justify-content: center;
   text-align: center;
-
 }
 
 body {
