@@ -72,7 +72,6 @@ function display5Day(fiveDayData) {
     card.classList.add(
       "col-md-2",
       "forecast",
-      "bg-secondary",
       "text-white",
       "m-2",
       "rounded"
