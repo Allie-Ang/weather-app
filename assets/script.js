@@ -82,12 +82,14 @@ function display5Day(fiveDayData) {
     let tempEL = document.createElement("p");
     tempEL.textContent = "Tempurature: " + fiveDayData.list[i].main.temp;
 
-    let humidity = document.createElement("p");
-    humidity.textContent = fiveDayData.list[i].main.humidity;
-
     let windSpeed = document.createElement("p");
-    windSpeed.textContent = fiveDayData.list[i].wind.speed;
+    windSpeed.textContent = "Wind Speed: " + fiveDayData.list[i].wind.speed;
+
+    let humidity = document.createElement("p");
+    humidity.textContent = "Humidity: " + fiveDayData.list[i].main.humidity;
+
     card.append(dateEl, tempEL, humidity, windSpeed);
+
     document.querySelector("#forecast").append(card);
   }
 }
