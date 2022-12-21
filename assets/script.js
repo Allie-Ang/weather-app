@@ -1,7 +1,3 @@
-// Weather API
-// Geocoding API
-
-// Assigning API key to variable
 const apiKey = "26b7283df774d23ad23929f9b2ab0395";
 
 // reach into the html and grab the button you want to listen to
@@ -18,16 +14,8 @@ function handleCitySearch(event) {
   cityNameIn.value = "";
 }
 
-// add the event listener tool
 enterBtn.addEventListener("click", handleCitySearch);
-// ** get the value the user enter
-// reach into the html and grab the text box
-// sanity check - look at it to see what prop hold the value
-// extract that data
 
-// ** use that data to make a call to the api
-// try to make the call w/ static data first
-// once that works use the data you got form the user
 function fetchCurrentWeather(city) {
   var apiUrlWeather = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&q=${city}&units=imperial`;
 
@@ -36,7 +24,6 @@ function fetchCurrentWeather(city) {
       return resp.json();
     })
     .then(function (data) {
-      // all the coding that is based on data
       console.log(data);
       displayCurrentWeather(data);
       fetch5Day(data.coord.lat, data.coord.lon);
@@ -93,3 +80,4 @@ function display5Day(fiveDayData) {
     document.querySelector("#forecast").append(card);
   }
 }
+
