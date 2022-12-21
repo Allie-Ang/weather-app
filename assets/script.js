@@ -14,7 +14,10 @@ function handleCitySearch(event) {
   cityNameIn.value = "";
 
   localStorage.setItem("searchedCity", JSON.stringify(city));
-  
+  var searchedCity = document.createElement("p");
+  searchedCity.textContent = "Hisory: ";
+  card.append(searchedCity);
+  document.querySelector("userHistory").append(card);
   console.log(city);
 }
 
