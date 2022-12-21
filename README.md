@@ -17,3 +17,4 @@
 
 ### Technologies Used
 ##### [Bootstrap](https://bootstrap.themes.guide)
+##### [Open Weather Map](https://openweathermap.org/forecast5)
