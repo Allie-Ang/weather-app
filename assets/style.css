@@ -1,0 +1,44 @@
+:root {
+  --purple: #80a1d4;
+  --green: #092327;
+  --lightGreen: #0b5351;
+  --white: #efecca;
+}
+* {
+  text-align: center;
+}
+
+#main-header {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+#forecast {
+  text-align: center;
+  justify-content: center;
+}
+
+#date {
+  color: --purple;
+}
+
+#currentWeather {
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  background: rgb(128, 161, 212);
+  background: linear-gradient(
+    0deg,
+    rgba(128, 161, 212, 1) 0%,
+    rgba(11, 83, 81, 1) 100%
+  );
+}
+
+#currentWeather {
+  text-align: center;
+  justify-content: center;
+}
